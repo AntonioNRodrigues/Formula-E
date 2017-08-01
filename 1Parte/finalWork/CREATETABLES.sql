@@ -1,7 +1,8 @@
 CREATE TABLE Temporada( 
   	ano VARCHAR (10),
-    	PRIMARY KEY (ano)
+    CONSTRAINT PK_TEMPORADA PRIMARY KEY (ano)
 );
+
 
 CREATE TABLE CarroTipo(
 	marca VARCHAR(100),
@@ -11,7 +12,7 @@ CREATE TABLE CarroTipo(
 	alturaSolo NUMBER,
 	potencia NUMBER,
 	pesoBaterias NUMBER,
-	PRIMARY KEY (marca)
+	CONSTRAINT PK_CarroTipo PRIMARY KEY (marca)
 );
 
 CREATE TABLE MembrosEquipa(
@@ -21,7 +22,7 @@ CREATE TABLE MembrosEquipa(
     	nacionalidade VARCHAR (100),
     	genero VARCHAR(10),
     	funcao VARCHAR(100) NOT NULL,
-   	PRIMARY KEY (passaporte)
+   		CONSTRAINT PK_MembrosEquipa PRIMARY KEY (passaporte)
 );
 
 CREATE TABLE Equipa( 
